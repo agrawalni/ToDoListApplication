@@ -1,0 +1,63 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+#header{
+    background-color: #222222;
+    color: #777777;
+    height: 50px;
+    padding: 1% 0 0 5%;
+}
+
+.container{
+    padding:1% 0 0 5%;
+}
+
+.toDoListTask{clear : both;}
+.toDoListHeader,.toDoListTask{display: flex;}
+.toDoListHeader div, .toDoListTask div{
+    float : left;
+    border : 1px solid black;
+    word-wrap: break-word;
+}
+.toDoListHeader .task,.toDoListHeader .date{font-weight: bold;}
+.task,.date{text-align: center;padding:5px;}
+.task{width:30%;}
+.date{width:15%;}
+
+.loadMoreTasks{
+    clear : both;
+    padding-top : 20px;
+}
+
+button{
+    color: #fff;
+    background-color: #0275d8;
+    border: 1px solid transparent;
+    border-color: #0275d8;
+    padding:8px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+#addForm{
+    margin-top :20px;
+}
+
+#addForm input{
+    width : 92%;
+    height : 25px;
+}
+
+#addForm button {
+    display : block;
+    margin-top:20px;
+}
+
+#error{color : red;}
