@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List Application</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <div id="header">
+        <h1>Todo List</h1>
+    </div>
+
+    <div class="container">
+        <div id="globalError"></div>
+        <div class="toDoList">
+            <div class="toDoListHeader">
+                <div class="task"> Task </div>
+                <div class="date"> Created on </div>
+                <div class="date"> Completed on</div>
+                <div class="date"> Completed </div>
+            </div>
+            <div class="toDoListTasks">
+
+            </div>
+        </div>
+
+        <div class="loadMoreTasks">
+            <button id="loadMoreTasks" onclick="toDoListApp.loadMoreTasks();">loadMoreTasks</button>
+        </div>
+
+        <div id="addForm">
+            <div id="error">
+            </div>
+            <input type="text" placeholder=" Enter Task Here " id="newTask"/>
+            <button onclick="toDoListApp.addTask()"> Add Task </button>
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
